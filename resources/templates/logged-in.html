@@ -16,6 +16,16 @@ Welcome, {{username}}!
     <input type="number" placeholder="Beer #" name="beerid"/>
     <button type="submit">Delete</button>
 </form>
+<form action="edit-beer" method="post">
+    <input type="number" placeholder="Beer # to edit" name="beeridedit"/>
+    <input type="text" placeholder="Update name" name="nameedit"/>
+    <input type="text" placeholder="Update type" name="typeedit"/>
+    <button type="submit">Submit Edit</button>
+</form>
+<form action="search-beer" method="post">
+    <input type="text" placeholder="Search" name="search"/>
+    <button type="submit">Search</button>
+</form>
 {{#beers}}
 {{id}}. {{name}} - {{type}}<br>
 {{/beers}}
